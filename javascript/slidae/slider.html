@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="slider">
+        <img src="../slidae/img/1.jpg" class="slider-img" alt="">
+        <img src="../slidae/img/2.jpg" class="slider-img" alt="">
+        <img src="../slidae/img/3.jpg" class="slider-img" alt="">
+        <img src="../slidae/img/4.jpeg" class="slider-img" alt="">
+        <img src="../slidae/img/5.jpg" class="slider-img" alt="">
+    </div>
+
+    <script>
+        let sliderImageData = document.getElementsByClassName("slider-img");
+        let count = 0
+        console.log(sliderImageData);
+        function slider() {
+            for (let index = 0; index < sliderImageData.length; index++) {
+                console.log(sliderImageData[index]);
+                sliderImageData[index].style.display ="none"
+                
+            }
+            console.log("count",count);
+            count++;
+            SliderImageData[count].style.display ="block"
+            setTimeout(slider, 3000);
+        }
+        slider();
+
+    </script>
+</body>
+</html>

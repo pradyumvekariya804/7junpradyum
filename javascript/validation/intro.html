@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    span{
+        color: red;
+    }
+</style>
+<body>
+    <form  method="get">
+        <table border="1" align="center">
+            <tr>
+                <td>user Name</td>
+                <td>
+                    <input type="text" onblur="checkreq(this,'usernameError')" name="username" id="username" required >
+                     <span id="usernameError">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="Password" onblur="checkreq( this,'PasswordError')" name="Password" id="Password"required ><span id="PasswordError" >*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email" name="email"  onkeyup="checkemail(this)" id="email" required> <span id="emailError">*</span>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td>
+                    <input type="tel"  onblur="checkreq(this,'mobileError')" onkeypress="return (event.which >= 48 && event.which <= 57)" name="mobile" id="mobile" required> <span id="mobileError">*</span>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="sendData" value="Save" id="sendData">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+
+        // function checkemail(this) {
+        //     RegEx = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        //     if (RegEx.test(this.value)) {
+        //         document.getElementById("emailError").innerHTML = ""
+        //     } else {
+        //         document.getElementById("emailError").innerHTML = "Invalid Format"
+        //     }
+        // }
+
+    //     function checkreq() {
+    //         let username = document.getElementById("username").value;
+        
+    //     if (username == "") {
+    //         console.log("this field is required");
+    //         document.getElementById("usernameError").innerHTML = "<b>This field is required</b>";
+    //     }else{
+    //         document.getElementById("usernameError").innerHTML = "";
+    //     }
+    // }
+       
+    //    function checkreq() {
+    //      let Password = document.getElementById("Password").value;
+
+    //      if (Password == "") {
+    //         console.log("this field is required");
+    //         document.getElementById("PasswordError").innerHTML = "<b>This field is required</b>";
+    //      } else {
+    //         document.getElementById("PasswordError").innerHTML = "";
+    //      }
+    //    }
+    function checkreq(e,spn) {
+        if (e.value == "") {
+            
+            document.getElementById(spn).innerHTML = "<b>This field is required</b>";
+        } else {
+            document.getElementById(spn).innerHTML = "";
+        }
+    }
+    </script>
+</body>
+</html>
