@@ -1,0 +1,66 @@
+                           
+        MODULE: 5 (JQuery Basic, Effects & Advance)
+                    
+
+
+• What is JQuery?
+
+  = jQuery is a fast, small, and feature-rich JavaScript 
+  library. It makes things like HTML document traversal 
+  and manipulation, event handling, animation, and Ajax 
+  much simpler with an easy-to-use API that works across 
+  a multitude of browsers. With a combination of 
+  versatility and extensibility, jQuery has changed the way 
+  that millions of people write JavaScript.
+
+• How To Apply CSS Using JQuery, How To Add Class And 
+  Remove Class In Jquery , JQuery Animation?
+  = JQuery Manipulating CSS:
+
+  addClass() - Adds one or more classes to the selected 
+  elements. removeClass() - Removes one or more classes 
+  from the selected elements. toggleClass() - Toggles 
+  between adding/removing classes from the selected 
+  elements. css() - Sets or returns the style attribute.
+
+  JQuery Animation:
+
+  The required params parameter defines the CSS 
+  properties to be animated.
+
+  The optional speed parameter specifies the duration of 
+  the effect. It can take the following values: "slow", 
+  "fast", or milliseconds.
+  The optional callback parameter is a function to be 
+  executed after the animation completes.
+
+• How To Create Slider With Animation?
+
+  Answer:
+  • JQuery Sliding Methods:
+  • jQuery has the following slide methods:
+     1. SLIDEDOWN()
+     • Syntax: $(SELECTOR).SLIDEDOWN(SPEED,CALLBACK);
+     The optional speed parameter specifies the duration of 
+     the effect. It can take the following values: "slow", 
+     "fast", or milliseconds. The optional callback parameter 
+     is a function to be executed after the sliding completes.
+
+     2. SLIDEUP()
+     • Syntax: $(SELECTOR).SLIDEUP(SPEED,CALLBACK); The 
+     optional speed parameter specifies the duration of the 
+     effect. It can take the following values: "slow", "fast", or 
+     milliseconds. The optional callback parameter is a 
+     function to be executed after the sliding completes.
+
+     3. SLIDETOGGLE()
+     • The jQuery slideToggle() method toggles between the 
+     slideDown() and slideUp() methods. If the elements 
+     have been slid down, slideToggle() will slide them up. If 
+     the elements have been slid up, slideToggle() will slide 
+     them down.
+     $(SELECTOR).SLIDETOGGLE(SPEED,CALLBACK); The 
+     optional speed parameter can take the following values: 
+     "slow", "fast", milliseconds. The optional callback 
+     parameter is a function to be executed after the sliding 
+     completes

@@ -50,43 +50,25 @@
     </header>
 
     <script>
-        // let bar = document.querySelector(".bar");
-        // let navbar = document.querySelector(".main-menu");
-        
-        // bar.addEventListener("click", () =>{
-        //     bar.classList.toggle("active");
-        //     navbar.classList.toggle('active');
-        // })
-
-        // let btn = document.querySelector(".bar")
-        // let icon = btn.querySelector(".fa-bars")
-        // btn.onclick = function () {
-        //    if (icon.classList.contains("fa-bars")) {
-        //     icon.classList.replace("fa-bars", "fa-times");
-        //    } else {
-        //     icon.classList.replace("fa-times", "fa-bars");
-        //    } 
-        // }
         let bar = document.querySelector(".bar");
-        let navbar = document.querySelector('.main-menu');
-
-        // bar.addEventListener("click", () => {
-        //     bar.classList.toggle("active");
-        //     navbar.classList.toggle('active')
-        // });
-        let btn = document.querySelector(".bar");
-        let icon = btn.querySelector(".fa-bars");
-        btn.onclick = function () {
-            if (icon.classList.contains("fa-bars")) {
-                icon.classList.replace("fa-bars", "fa-times");
-                bar.addEventListener("click", () => {
+        let navbar = document.querySelector(".main-menu");
+        
+        bar.addEventListener("click", () =>{
             bar.classList.toggle("active");
-            navbar.classList.toggle('active')
-        });
-            } else {
-                icon.classList.replace("fa-times", "fa-bars");
-            }
+            navbar.classList.toggle('active');
+        })
+
+        let btn = document.querySelector(".bar")
+        let icon = btn.querySelector(".fa-bars")
+        btn.onclick = function () {
+           if (icon.classList.contains("fa-bars")) {
+            icon.classList.replace("fa-bars", "fa-times");
+           } else {
+            icon.classList.replace("fa-times", "fa-bars");
+           } 
         }
+       
+        
     </script>
 </body>
 </html>
