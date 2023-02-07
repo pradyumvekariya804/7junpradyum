@@ -8,17 +8,20 @@
 </head>
 <body>
     <script>
-        function* fun() {
-            yield 10;
-            yield 20;
-            yield 30;
-        }
-        console.log(fun().next()); 
-        var gen = fun();
-        console.log(gen.next());
-        console.log(gen.next());
-        console.log(gen.next());
-       
+        let a = 123;
+        let b = 456;
+        
+        console.log(a);
+        console.log(b);
+        console.log(a,b);
+
+        [a,b] = [b,a]
+
+        console.log(a);
+        console.log(b);
+        console.log(b,a);
     </script>
+    <h1>Destructuring assignment</h1>
+
 </body>
 </html>

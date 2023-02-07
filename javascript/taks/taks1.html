@@ -8,17 +8,16 @@
 </head>
 <body>
     <script>
-        function* fun() {
-            yield 10;
-            yield 20;
-            yield 30;
-        }
-        console.log(fun().next()); 
-        var gen = fun();
-        console.log(gen.next());
-        console.log(gen.next());
-        console.log(gen.next());
+        let a = 10
+        let b = 20
+        console.log(a,b);
        
+        temp = a;
+        a = b;
+        b = temp;
+        console.log(a,b);
     </script>
+    <p>javascript function to swap two number</p>
+
 </body>
 </html>
